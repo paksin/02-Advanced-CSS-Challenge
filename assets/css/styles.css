@@ -1,0 +1,137 @@
+body{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: #76bdc5;
+    color: #fff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    font-size: 200%;
+    margin-left: 100px;
+}
+
+h2{
+    margin-left: 10%;
+    font-size: 150%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    margin-right: 100px;
+  }
+
+nav a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+.navIcons{
+    margin: auto 50px;
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    margin: 100px 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#about div{
+    width: 80%;
+    padding: 50px 50px;
+    border-width: 0;
+    border-left: 5px;
+    border-style: solid;
+    border-color: #76bdc5;
+}
+
+#about ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+#descr{
+    width: 60%;
+    padding-left: 200px;
+}
+
+#about img{
+    width: 175px;
+    margin: 0 150px;
+}
+
+#portDiv{
+    padding: 50px;
+    border-width: 0;
+    border-left: 5px;
+    border-style: solid;
+    border-color: #76bdc5;
+    /* margin-left: 50px; */
+    width: 80%;
+}
+
+#bigProject{
+    width: 70%;
+    margin: 0 200px;
+}
+
+#bigProject img{
+    width: 100%;
+}
+
+#portDiv ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#smallProject{
+    width: 300px;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+#smallProject img{
+    width: 100%;
+}
+
+#contact div {
+    width: 80%;
+    padding: 50px 200px;
+    border-width: 0;
+    border-left: 5px;
+    border-style: solid;
+    border-color: #76bdc5;
+}
+
+#contact ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 300px;
+  }
+
+.contactInfo{
+    margin: auto 50px;
+    border-width: 0px;
+    border-bottom: 5px;
+    border-style: solid;
+    border-color: #76bdc5;
+}
