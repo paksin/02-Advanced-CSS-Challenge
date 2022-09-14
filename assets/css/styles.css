@@ -3,6 +3,7 @@ body{
     flex-direction: column;
     line-height: 1.5;
 }
+
 header{
     display: flex;
     justify-content: space-between;
@@ -21,11 +22,13 @@ a{
 h1{
     font-size: 200%;
     margin-left: 100px;
+    min-width: 200px;
 }
 
 h2{
-    margin-left: 10%;
+    margin-left: 50px;
     font-size: 150%;
+    min-width: 200px;
 }
 
 nav ul {
@@ -66,16 +69,18 @@ section{
 #about ul{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #descr{
     width: 60%;
-    padding-left: 200px;
+    padding-left: 100px;
+    min-width: 700px;
 }
 
 #about img{
     width: 175px;
-    margin: 0 150px;
+    margin-right: 250px;
 }
 
 #portDiv{
@@ -84,13 +89,12 @@ section{
     border-left: 5px;
     border-style: solid;
     border-color: #76bdc5;
-    /* margin-left: 50px; */
     width: 80%;
 }
 
 #bigProject{
     width: 70%;
-    margin: 0 200px;
+    margin: 0 100px;
 }
 
 #bigProject img{
@@ -105,7 +109,7 @@ section{
 #smallProject{
     width: 300px;
     margin-top: 50px;
-    margin-left: 200px;
+    margin-left: 100px;
 }
 
 #smallProject img{
@@ -114,7 +118,7 @@ section{
 
 #contact div {
     width: 80%;
-    padding: 50px 200px;
+    padding: 50px 100px;
     border-width: 0;
     border-left: 5px;
     border-style: solid;
@@ -134,4 +138,52 @@ section{
     border-bottom: 5px;
     border-style: solid;
     border-color: #76bdc5;
+}
+
+@media screen and (max-width: 1700px) {
+    #about img{
+        margin-top: 50px;
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        flex-wrap: wrap;
+    }
+    
+    h1{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    section{
+        display: inline;
+    }
+
+    header ul{
+        width: 100%;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-right: 0;
+    }
+    header li{
+        width: 100%;
+    }
+    
+    #about div{
+        width: 100%;
+        padding: 50px 50px;
+        border-width: 0;
+        border-left: 5px;
+        border-style: solid;
+        border-color: #76bdc5;
+    }
+
+    #descr{
+        width: 30%;
+        padding-left: 100px;
+        min-width: 400px;
+    }
 }
